@@ -10,16 +10,16 @@ const MyNotes = () => {
 
     const [ notes, setNotes ] = useState([]);
     
-    const fetchNotes = async () => {
-        const {data} = await axios.get('/api/notes');
+    // const fetchNotes = async () => {
+    //     const {data} = await axios.get('/api/notes');
 
-        setNotes(data);
-        console.log(notes)
-    }
+    //     setNotes(data);
+    //     console.log(notes)
+    // }
 
-    useEffect(() => {
-        fetchNotes();
-    }, [])
+    // useEffect(() => {
+    //     fetchNotes();
+    // }, [])
 
     const deleteHandler = (id) => {
         if (window.confirm('Are you sure?')) { }
