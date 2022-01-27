@@ -4,15 +4,15 @@ import { useNavigate } from "react-router-dom";
 import './LandingPage.css';
 
 const LandingPage = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // useEffect(() =>{
-    //     const userInfo = localStorage.getItem('userInfo');
+    useEffect(() => {
+        const userInfo = localStorage.getItem('userInfo');
 
-    //     if(userInfo){
-    //         navigate('/mynotes') 
-    //     }
-    // }, [])
+        if (userInfo) {
+            navigate('/mynotes')
+        }
+    }, [])
     return (
         <div className="main">
             <Container>
@@ -30,7 +30,7 @@ const LandingPage = () => {
                                 <Button size="lg" className="landingButton" variant="outline-primary">Signup</Button>
                             </a>
                         </div>
-                    </div> 
+                    </div>
                 </Row>
             </Container>
         </div>

@@ -11,9 +11,9 @@ import { register } from "../../actions/userActions";
 const RegisterScreen = () => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
-    const [pic, setPic] = useState('"https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"');
+    const [pic, setPic] = useState("https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg");
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState(false);
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [message, setMessage] = useState(null);
     const [picMessage, setPicMessage] = useState(null);
 
