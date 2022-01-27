@@ -23,8 +23,5 @@
   },
   "engines": {
     "node": "12.x"
-  },
-  "optionalDependencies": {
-    "fsevents": "*"
   }
 }
